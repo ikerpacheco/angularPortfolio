@@ -1,0 +1,27 @@
+body {
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+span {
+    color: rgb(1, 126, 251);
+    font-weight: 600;
+}
+
+span:hover {
+    color: rgb(35, 35, 35);
+}
+
+h1 {
+    color: rgb(58, 58, 58);
+    font-size: 70px;
+}
+
+h2 {
+    color: rgb(58, 58, 58);
+}
+
+p {
+    color: rgb(104, 103, 103);
+}

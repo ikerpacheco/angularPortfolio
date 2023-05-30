@@ -1,0 +1,18 @@
+.top-container {
+    margin: auto 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-section {
+    margin: 10rem auto;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    background-color: #fff;
+}
+
+.main {
+    margin-top: 10rem;
+}
