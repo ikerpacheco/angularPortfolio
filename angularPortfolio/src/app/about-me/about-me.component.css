@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.programming {
+    height: 300px;
+    border-radius: 15px;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin-left: 50px;
+}
+
+h2 {
+    margin-top: -2rem;
+}
+h2:hover {
+    color: rgb(1, 126, 251);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.separator {
+    width: 20%;
+    height: 2px;
+    background-color: rgb(1, 126, 251);
+    margin-bottom: 3rem;
+}
+
+.description {
+    font-weight: 200;
+    text-align: justify;
+}
+
+p {
+    font-weight: 200;
+    margin: 0;
+}
+
+.hard-skills {
+    display: flex;
+    margin-top: 7rem;
+}
+
+.language-logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.language-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.angular-logo {
+    width: 75px;
+    height: 75px;
+    margin-right: 65px;
+    cursor: pointer;
+}
+
+.angular-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.js-logo {
+    width: 120px;
+    height: 70px;
+    margin-right: 30px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.js-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.css-logo {
+    width: 30px;
+    height: 40px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.css-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.python-logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.python-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.react-logo {
+    width: 80px;
+    height: 70px;
+    margin-right: 50px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.react-logo:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}

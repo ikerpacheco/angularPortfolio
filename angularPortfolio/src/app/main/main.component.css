@@ -1,5 +1,3 @@
-.container {}
-
 .linkedin-logo {
     width: 2rem;
     height: 2rem;
@@ -16,6 +14,7 @@
     line-height: 5.5rem;
     margin-bottom: 0px;
     font-size: 4.5rem;
+    font-weight: 500;
 }
 
 .presentation-text {

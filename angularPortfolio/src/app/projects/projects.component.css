@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 60%;
+    background-color: #fff;
+    padding: 5rem 0;
+    margin-left: 22%;
+}
+
+.image {
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 4rem;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    width: 40%;
+}
+

@@ -1,0 +1,12 @@
+.container {
+    margin: auto 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkedin-logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
