@@ -66,3 +66,13 @@ h3 {
     height: 300px;
     border-radius: 50%;
 }
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    margin-left: 1rem;
+}

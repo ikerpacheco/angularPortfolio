@@ -11,9 +11,8 @@ export class AppComponent {
   ngOnInit() {
     new fullpage('#fullpage', {
       navigation: true,
-      sectionsColor: ['#f2f2f2', '#fff', '#f2f2f2'],
+      sectionsColor: ['#f2f2f2', '#fff', '#22222'],
       showActiveTooltip: true,
-      controlArrows: false,
       slidesNavigation: true,
       anchors: ['home', 'about', 'projects'],
     });

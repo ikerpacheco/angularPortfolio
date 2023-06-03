@@ -1,12 +1,16 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    width: 60%;
+    width: 70rem;
     background-color: #fff;
     padding: 5rem 0;
-    margin-left: 22%;
+    margin-left: 28%;
 }
 
 .image {
@@ -23,3 +27,12 @@
     width: 40%;
 }
 
+.description {
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.primary-button {
+    margin-left: 67%;
+}
