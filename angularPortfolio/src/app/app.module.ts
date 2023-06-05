@@ -9,6 +9,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MatCardModule } from '@angular/material/card';
 
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
     MainComponent,
     AboutMeComponent,
     ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

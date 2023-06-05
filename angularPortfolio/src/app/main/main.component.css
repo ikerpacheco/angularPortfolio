@@ -21,8 +21,31 @@
     width: 50%;
 }
 
+.subtitle {
+    border-right: 2px solid;
+    width: 64%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s, cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+    100% {
+        border-right: none;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
 .presentation-title:hover {
-    color: rgb(1, 126, 251);
+    color: var(--primary-color);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -34,13 +57,13 @@
 }
 
 h2 {
-    color: rgb(1, 126, 251);
+    color: var(--primary-color);
     font-size: 4rem;
     font-weight: 200;
 }
 
 h3 {
-    color: rgb(1, 126, 251);
+    color: var(--primary-color);
     font-weight: 200;
     font-size: 1.8rem;
     margin: 0px;

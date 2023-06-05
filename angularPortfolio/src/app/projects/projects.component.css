@@ -19,7 +19,7 @@ body {
 }
 
 h2:hover {
-    color: rgb(1, 126, 251);
+    color: var(--primary-color);
     cursor: pointer;
     transition: 0.2s;
 }
@@ -28,6 +28,11 @@ h2:hover {
     height: 300px;
     border-radius: 15px;
     margin-left: 4rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .about-me-text {
@@ -46,4 +51,9 @@ h2:hover {
 
 .primary-button {
     margin-left: 67%;
+}
+
+#sacs-button {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
