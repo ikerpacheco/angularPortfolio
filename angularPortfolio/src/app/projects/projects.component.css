@@ -18,6 +18,12 @@ body {
     padding: 5rem 0;
 }
 
+h2:hover {
+    color: rgb(1, 126, 251);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 .image {
     height: 300px;
     border-radius: 15px;
