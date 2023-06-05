@@ -25,13 +25,13 @@
     margin: 0 20px;
 }
 
-.section:hover {
+.nav-section:hover {
     color: rgb(1, 126, 251);
     cursor: pointer;
     transition: 0.2s;
 }
 
-.section::after {
+.nav-section::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -44,7 +44,7 @@
     transform-origin: right;
 }
 
-.section:hover::after {
+.nav-section:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }

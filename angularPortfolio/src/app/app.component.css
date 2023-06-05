@@ -23,3 +23,8 @@
     margin-bottom: 10rem;
 }
 
+#section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

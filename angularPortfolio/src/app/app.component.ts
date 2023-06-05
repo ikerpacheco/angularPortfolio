@@ -15,6 +15,8 @@ export class AppComponent {
       showActiveTooltip: true,
       slidesNavigation: true,
       anchors: ['home', 'about', 'projects'],
+      autoScrolling: true,
+      scrollHorizontally: true
     });
   }
 }
