@@ -18,7 +18,7 @@ export class AppComponent {
       sectionsColor: [this.second_color, this.first_color, this.second_color, this.first_color],
       showActiveTooltip: true,
       slidesNavigation: true,
-      anchors: ['home', 'about', 'projects', 'contact'],
+      anchors: ['navbar', 'home', 'about', 'projects', 'contact', 'footer'],
       autoScrolling: true,
       scrollHorizontally: true
     });
