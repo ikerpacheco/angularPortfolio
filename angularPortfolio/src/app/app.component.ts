@@ -11,10 +11,10 @@ export class AppComponent {
   ngOnInit() {
     new fullpage('#fullpage', {
       navigation: true,
-      sectionsColor: ['#f2f2f2', '#fff', '#22222', '#fff'],
+      sectionsColor: ['#22222', '#22222', '#fff', '#22222', '#fff'],
       showActiveTooltip: true,
       slidesNavigation: true,
-      anchors: ['home', 'about', 'projects', 'contact'],
+      anchors: ['navbar', 'home', 'about', 'projects', 'contact', 'footer'],
       autoScrolling: true,
       scrollHorizontally: true
     });

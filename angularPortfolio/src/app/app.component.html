@@ -4,13 +4,13 @@
 
 <body>
   <div id="fullpage">
-    <div class="section s1">
-      <div class="top-container">
-        <app-navbar class="navbar"></app-navbar>
-        <app-main class="main"></app-main>
-      </div>
+    <div class="section fp-auto-height">
+      <app-navbar class="navbar"></app-navbar>
     </div>
-    <div class="section s2">
+    <div class="section">
+        <app-main class="main"></app-main>
+    </div>
+    <div class="section">
         <app-about-me class="about-me"></app-about-me>
     </div>
     <div class="section" id="section3">
@@ -18,6 +18,9 @@
     </div>
     <div class="section" id="section4">
       <app-contact class="contact"></app-contact>
+    </div>
+    <div class="section fp-auto-height" id="section5">
+      <app-footer class="footer"></app-footer>
     </div>
   </div>
 </body>

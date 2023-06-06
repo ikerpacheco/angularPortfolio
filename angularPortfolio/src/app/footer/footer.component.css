@@ -1,12 +1,47 @@
 .container {
-    margin: auto 20%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.linkedin-logo {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem 1rem;
+.sections {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: #000;
+    font-size: 0.7rem;
+}
+
+a:hover {
+    font-weight: 600;
+    color: #000;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.title:hover {
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.separator {
+    background-color: #000;
+    width: 100%;
+}
+
+.name {
+    color: #000;
+    font-size: 0.6rem;
 }

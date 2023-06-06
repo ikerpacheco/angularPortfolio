@@ -1,12 +1,23 @@
 <h2>Contact</h2>
 <div class="inputs">
-    <label for="">Name</label>
-    <input placeholder="Your name" class="basic-input" type="text">
-    <label for="">Email</label>
-    <input placeholder="Your email" class="basic-input" type="text">
-    <label for="">Subject</label>
-    <input placeholder="What do you want to talk about?" class="basic-input" type="text">
-    <label for="">Message</label>
-    <input placeholder="Write your message here" class="message-input" type="text">
-    <button class="primary-button" id="send-contact">Send</button>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <div class="input-group">
+            <label for="">Name <span *ngIf="name_missing">   *Please complete this field*</span></label>
+            <input formControlName="name" id="name" placeholder="Your name" class="basic-input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="">Email <span *ngIf="email_missing">   *Please complete this field*</span></label>
+            <input formControlName="email" id="email" placeholder="Your email" class="basic-input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="">Subject <span *ngIf="subject_missing">   *Please complete this field*</span></label>
+            <input formControlName="subject" id="subject" placeholder="What do you want to talk about?" class="basic-input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="">Message <span *ngIf="message_missing">   *Please complete this field*</span></label>
+            <input formControlName="message" id="message" placeholder="Write your message here" class="message-input" type="text">
+        </div>
+        <button type="submit" class="primary-button" id="send-contact">Send</button>
+        <p *ngIf="form_submitted" style="color: green;">Message sent succesfully!</p>
+    </form>
 </div>
