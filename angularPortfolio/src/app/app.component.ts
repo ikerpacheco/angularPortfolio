@@ -6,12 +6,16 @@ import * as fullpage from 'fullpage.js/dist/fullpage.js';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+  first_color = '#fff';
+  second_color = '#22222';
   title = 'angularPortfolio';
+  myPage: any;
   ngOnInit() {
-    new fullpage('#fullpage', {
+    this.myPage = new fullpage('#fullpage', {
       navigation: true,
-      sectionsColor: ['#f2f2f2', '#fff', '#22222', '#fff'],
+      sectionsColor: [this.second_color, this.first_color, this.second_color, this.first_color],
       showActiveTooltip: true,
       slidesNavigation: true,
       anchors: ['home', 'about', 'projects', 'contact'],
@@ -19,4 +23,17 @@ export class AppComponent {
       scrollHorizontally: true
     });
   }
+
+  // enableDarkMode(): void {
+  //   console.log('Dark Mode Enabled');
+  //   this.first_color = '#1C1C1C';
+  //   this.second_color = '#232323';
+
+  //   console.log(this.myPage.sectionsColor);
+  //   setTimeout(() => {
+  //     this.myPage.sectionsColor = [this.second_color, this.first_color, this.second_color, this.first_color];
+  //     console.log(this.myPage.sectionsColor);
+  //     this.myPage.reBuild();
+  // }, 100);
+  // }
 }
