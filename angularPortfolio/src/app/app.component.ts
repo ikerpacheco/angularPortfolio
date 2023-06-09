@@ -7,11 +7,17 @@ import * as fullpage from 'fullpage.js/dist/fullpage.js';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'angularPortfolio';
+  greyWhite = '#22222';
+  white = '#fff';
+  greyDark = '#181818';
+  Dark = '#090909';
+
   ngOnInit() {
     new fullpage('#fullpage', {
       navigation: true,
-      sectionsColor: ['#22222', '#22222', '#fff', '#22222', '#fff'],
+      sectionsColor: [this.greyWhite, this.greyWhite, this.white, this.greyWhite, this.white, this.greyWhite],
       showActiveTooltip: true,
       slidesNavigation: true,
       anchors: ['navbar', 'home', 'about', 'projects', 'contact', 'footer'],
