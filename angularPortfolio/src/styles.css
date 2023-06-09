@@ -39,6 +39,11 @@ p {
     cursor: pointer;
 }
 
+.primary-button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
 .primary-text-button {
     color: #fff;
     text-decoration: none;

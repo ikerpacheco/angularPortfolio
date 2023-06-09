@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -13,10 +13,54 @@ export class MainComponent implements OnInit {
   endValue = 0;
   duration = 0;
   counter = 0;
+  firstImage: boolean = true;
+  secondImage: boolean = false;
+  thirdImage: boolean = false;
+
+  images: string[] = ['hi.png', 'laptop.png', 'sunglasses.png'];
+  currentImageIndex: number = 0;
+  intervalId: any;
+
+  @HostListener('swipeleft')
+  onSwipeLeft() {
+    this.nextImage();
+    this.resetInterval();
+  }
+
+  @HostListener('swiperight')
+  onSwipeRight() {
+    this.previousImage();
+    this.resetInterval();
+  }
+
+  startInterval() {
+    this.intervalId = setInterval(() => {
+      this.nextImage();
+    }, 5000); // Change the interval time (in milliseconds) as needed
+  }
+
+  resetInterval() {
+    clearInterval(this.intervalId);
+    this.startInterval();
+  }
+
+  nextImage() {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }
+
+  previousImage() {
+    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+  }
+
+  previousImageIndex(): number {
+    return (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+  }
 
   constructor() {
   }
+
   ngOnInit() {
+    this.startInterval();
     this.valueDisplays = document.querySelectorAll('.num');
     console.log(this.valueDisplays);
 
