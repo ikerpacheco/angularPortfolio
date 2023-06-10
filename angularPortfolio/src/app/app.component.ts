@@ -15,7 +15,7 @@ export class AppComponent {
   ngOnInit() {
     this.myPage = new fullpage('#fullpage', {
       navigation: true,
-      sectionsColor: [this.second_color, this.first_color, this.second_color, this.first_color],
+      sectionsColor: [this.first_color, this.second_color, this.first_color, this.second_color, this.first_color],
       showActiveTooltip: true,
       slidesNavigation: true,
       anchors: ['navbar', 'home', 'about', 'projects', 'contact', 'footer'],
@@ -24,16 +24,16 @@ export class AppComponent {
     });
   }
 
-  // enableDarkMode(): void {
-  //   console.log('Dark Mode Enabled');
-  //   this.first_color = '#1C1C1C';
-  //   this.second_color = '#232323';
+  enableDarkMode(): void {
+    console.log('Dark Mode Enabled');
+    this.first_color = '#1C1C1C';
+    this.second_color = '#232323';
 
-  //   console.log(this.myPage.sectionsColor);
-  //   setTimeout(() => {
-  //     this.myPage.sectionsColor = [this.second_color, this.first_color, this.second_color, this.first_color];
-  //     console.log(this.myPage.sectionsColor);
-  //     this.myPage.reBuild();
-  // }, 100);
-  // }
+    console.log(this.myPage.sectionsColor);
+    setTimeout(() => {
+      this.myPage.sectionsColor = [this.second_color, this.first_color, this.second_color, this.first_color];
+      console.log(this.myPage.sectionsColor);
+      this.myPage.reBuild();
+  }, 100);
+  }
 }

@@ -52,16 +52,6 @@ export class ContactComponent implements OnInit {
       console.log("Form submitted successfully");
       this.contactForm.reset();
 
-      // const email = this.contactForm.value;
-      // const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      // this.http.post('https://formspree.io/asdlf7asdf',
-      //   { name: email.name, replyto: email.email, message: email.message },
-      //   { 'headers': headers }).subscribe(
-      //     response => {
-      //       console.log(response);
-      //     }
-      //   );
-
       setTimeout( () => {
         this.form_submitted = false;
       }, 5000);
