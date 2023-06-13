@@ -23,7 +23,7 @@
 
 .subtitle {
     border-right: 2px solid;
-    width: 64%;
+    width: 66%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 5s, cursor 0.4s step-end infinite alternate;
@@ -72,10 +72,11 @@ h3 {
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .stat {
+    cursor: pointer;
     height: fit-content;
     width: 20%;
     display: flex;
@@ -83,6 +84,11 @@ h3 {
     line-height: 0px;
     align-items: center;
     justify-content: center;
+}
+
+.stat:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .programming {
@@ -108,6 +114,10 @@ h3 {
     border-radius: 8px;
 }
 
+.linkedin-img:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
 
 .github-img {
     width: 2.2rem;
@@ -116,4 +126,46 @@ h3 {
     margin-left: 1rem;
     cursor: pointer;
     border-radius: 8px;
+}
+
+.github-img:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hi-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hi-img:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.down-arrow-img {
+    width: 80px;
+}
+
+.down-arrow-img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    scale: 1.2;
 }

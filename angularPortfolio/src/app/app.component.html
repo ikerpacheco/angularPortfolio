@@ -1,27 +1,26 @@
 <head>
-  <title>Iker.dev</title>
+    <title>Iker.dev</title>
 </head>
 
 <body>
-  <div id="fullpage">
-    <button (click)="enableDarkMode()">Dark mode</button>
-    <div class="section fp-auto-height">
-      <app-navbar class="navbar"></app-navbar>
+    <div id="fullpage">
+        <div class="section fp-auto-height">
+            <app-navbar class="navbar"></app-navbar>
+        </div>
+        <div class="section">
+            <app-main class="main"></app-main>
+        </div>
+        <div class="section">
+            <app-about-me class="about-me"></app-about-me>
+        </div>
+        <div class="section" id="section3">
+            <app-projects class="projects"></app-projects>
+        </div>
+        <div class="section" id="section4">
+            <app-contact class="contact"></app-contact>
+        </div>
+        <div class="section fp-auto-height" id="section5">
+            <app-footer class="footer"></app-footer>
+        </div>
     </div>
-    <div class="section">
-        <app-main class="main"></app-main>
-    </div>
-    <div class="section">
-        <app-about-me class="about-me"></app-about-me>
-    </div>
-    <div class="section" id="section3">
-      <app-projects class="projects"></app-projects>
-    </div>
-    <div class="section" id="section4">
-      <app-contact class="contact"></app-contact>
-    </div>
-    <div class="section fp-auto-height" id="section5">
-      <app-footer class="footer"></app-footer>
-    </div>
-  </div>
 </body>

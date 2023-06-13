@@ -1,23 +1,23 @@
 <h2>Contact</h2>
 <div class="inputs">
-    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+    <form action="https://formsubmit.co/ikerpacheco@gmail.com" method="POST">
         <div class="input-group">
             <label for="">Name <span *ngIf="name_missing">   *Please complete this field*</span></label>
-            <input formControlName="name" id="name" placeholder="Your name" class="basic-input" type="text">
+            <input name="name" formControlName="name" id="name" placeholder="Your name" class="basic-input" type="text">
         </div>
         <div class="input-group">
             <label for="">Email <span *ngIf="email_missing">   *Please complete this field*</span></label>
-            <input formControlName="email" id="email" placeholder="Your email" class="basic-input" type="text">
+            <input name="email" formControlName="email" id="email" placeholder="Your email" class="basic-input" type="text">
         </div>
         <div class="input-group">
             <label for="">Subject <span *ngIf="subject_missing">   *Please complete this field*</span></label>
-            <input formControlName="subject" id="subject" placeholder="What do you want to talk about?" class="basic-input" type="text">
+            <input name="subject" formControlName="subject" id="subject" placeholder="What do you want to talk about?" class="basic-input" type="text">
         </div>
         <div class="input-group">
             <label for="">Message <span *ngIf="message_missing">   *Please complete this field*</span></label>
-            <input formControlName="message" id="message" placeholder="Write your message here" class="message-input" type="text">
+            <input name="message" formControlName="message" id="message" placeholder="Write your message here" class="message-input" type="text">
         </div>
-        <button type="submit" class="primary-button" id="send-contact">Send</button>
+        <input type="submit" class="primary-button" id="send-contact">
         <p *ngIf="form_submitted" style="color: green;">Message sent succesfully!</p>
     </form>
 </div>

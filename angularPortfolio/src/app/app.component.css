@@ -14,8 +14,13 @@
 }
 
 .main {
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 7.2rem;
+    overflow: hidden;
+}
+
+.navbar {
+    overflow: hidden;
 }
 
 .about-me {

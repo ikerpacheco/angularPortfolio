@@ -48,8 +48,13 @@ export class ContactComponent implements OnInit {
     this.checkInputs();
 
     if (!this.name_missing && !this.email_missing && !this.subject_missing && !this.message_missing) {
+      const templateParams = {
+        from_name: this.contactForm.value.name,
+        from_email: this.contactForm.value.email,
+        subject: this.contactForm.value.subject,
+        message: this.contactForm.value.message
+      };
       this.form_submitted = true;
-      console.log("Form submitted successfully");
       this.contactForm.reset();
 
       setTimeout( () => {
